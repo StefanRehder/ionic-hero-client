@@ -8,7 +8,7 @@
 
 <ion-content padding>
   <ion-row>
-    <ion-col col-4>
+    <ion-col col-auto>
       <h1>List of Heroes</h1>
       <p style="color: red" *ngIf="statusMessage" >{{ statusMessage }}</p>
       <ion-list>
@@ -19,7 +19,7 @@
         </hero-list-element>
       </ion-list>
     </ion-col>
-    <ion-col col-8>
+    <ion-col col-8 col-sm-12 col-md-6 col-lg-4 col-xl-4>
       <div *ngIf="selectedHero">
           <hero-details [selectedHero]="selectedHero">
           </hero-details>

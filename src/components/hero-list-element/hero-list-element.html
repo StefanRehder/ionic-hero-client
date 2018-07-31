@@ -1,7 +1,16 @@
-<ion-item (click)="click(element)">
-  <h2>{{ element.name }}</h2>
-  Strength: {{ element.strength }}
-  <button icon-only (click)="deleteHero(element.name)">
-    <ion-icon name="trash"></ion-icon>
-  </button>
-</ion-item>
+<ion-card (click)="click(element)" class="hero-card">
+    <ion-card-header>
+        {{ element.name }}
+    </ion-card-header>
+    <ion-card-content>
+        Strength: {{ element.strength }}
+        <button ion-button
+                icon-start
+                color="danger"
+                (click)="deleteHero(element.name)"
+                class="delete-button">
+            <ion-icon name="trash"></ion-icon>
+            Delete
+        </button>
+    </ion-card-content>
+</ion-card>

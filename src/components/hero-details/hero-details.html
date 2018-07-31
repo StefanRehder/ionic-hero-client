@@ -1,3 +1,17 @@
 <h2>Hero Details</h2>
-Name: {{ selectedHero.name }}
-Strength: {{ selectedHero.strength }}
+<ion-row>
+    <ion-col col-3>
+        Name:
+    </ion-col>
+    <ion-col col-9>
+        <span class="hero-data">{{ selectedHero.name }}</span>
+    </ion-col>
+</ion-row>
+<ion-row>
+    <ion-col col-3>
+        Strength:
+    </ion-col>
+    <ion-col col-9>
+        <span class="hero-data">{{ selectedHero.strength }}</span>
+    </ion-col>
+</ion-row>
