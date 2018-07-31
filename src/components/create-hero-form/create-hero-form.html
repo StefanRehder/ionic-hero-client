@@ -1,0 +1,15 @@
+<h2>Create or update Hero</h2>
+<p style="color: red">{{ statusMessage }}</p>
+<form [formGroup]="createHeroForm" (ngSubmit)="onSubmit()" novalidate>
+    <ion-item no-lines>
+        <ion-label floating>Name</ion-label>
+        <ion-input type="text" formControlName="name" value=""></ion-input>
+    </ion-item>
+    <ion-item no-lines>
+        <ion-label floating>Strength</ion-label>
+        <ion-input type="text" formControlName="strength" value=""></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button type="submit">Submit</button>
+    <button ion-button type="reset">Reset</button>
+</form>
